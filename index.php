@@ -1,20 +1,17 @@
-<?php
-$isEasy = true;
-if ($isEasy == true) {
-  echo ('C\'est facile !'.'<br>');
-}
-else {
-  echo ('C\'est difficile !'.'<br>');
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercice 2 partie 7 php</title>
+  </head>
+  <body>
+    <form class="form" action="user.php" method="post">
+      <input type="lastname" name="lastname" placeholder="Nom">
+      <input type="firstname" name="firstname" placeholder="Prénom">
+      <button type="submit" name="validate">Valider</button>
+    </form>
+    <?php
 
-switch ($isEasy) {
-
-  case true:
-  echo ('C\'est facile !');
-  break;
-
-  case false:
-  echo ('C\'est difficile !');
-  break;
-}
-?>
+    ?>
+  </body>
+</html>
