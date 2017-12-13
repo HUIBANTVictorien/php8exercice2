@@ -1,17 +1,22 @@
+<?php
+session_start();
+$_SESSION['prenom'] = 'Victorien';
+$_SESSION['nom'] = 'HUIBANT';
+$_SESSION['age'] = 25;
+?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>exercice 2 partie 7 php</title>
-  </head>
-  <body>
-    <form class="form" action="user.php" method="post">
-      <input type="lastname" name="lastname" placeholder="Nom">
-      <input type="firstname" name="firstname" placeholder="Prénom">
-      <button type="submit" name="validate">Valider</button>
-    </form>
-    <?php
-
-    ?>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 2 partie 8 php</title>
+</head>
+<body>
+  <p>
+    Bonjour <?php echo $_SESSION['prenom']; ?> !<br/>
+    Clique sur le lien !
+  </p>
+  <p>
+    <a href="user.php">Lien vers user.php</a><br/>
+  </p>
+</body>
 </html>
